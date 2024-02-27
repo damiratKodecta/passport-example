@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "383bb95e-0b3d-41ab-b036-d90ba6dc5e48",
+		"name": "Passport Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20039326"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Damir",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "damir@daan.ba",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzNkNDZlZDZhMDg2OGU1NDAzMjAyZDQyNGFjNWI2MWFjZTE3YzcwOTMyN2I5N2EwODRkOTNlNzI2MWRiZjNjYTExZWUyOTQ0YThiNzlkM2QiLCJpYXQiOjE3MDkwNTMxODkuNDIxNTExLCJuYmYiOjE3MDkwNTMxODkuNDIxNTEyLCJleHAiOjE3NDA2NzU1ODkuNDEyNjg3LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.tLsv0hC26Cd1Juw-uip-CJkrbmTP-kybEguhT1MDbeZUFeb92sbLUbGnh9jU1iQOUdUZcco8Vtpl3ADN-MxxUHVeHl_ai3U8zTmhccOjLMe0HwXW18IWXfqpZmHl2HLDhGrrpI0A0LXHjXee8ICLtut35By2Yj97tt8UY1wMnPT8IHCNWYjHxdVhNqn-hmc6LYb73uIjKYiKNaB1fZ43sMIdznS2w7a-Evfnew_GwjQ9Pl42kMsYpNpe8dRaFoQX4RwT4Cw3YIubWnBKyRfb1D3bm8mxlPeI75WTW0oDkw3XwozXcj4qNtpPaM3Ri_KZeZp-HtGzmE92bJY22gWGGUFYyWzuUvj8cFxBEgDeb5R6FEy238ARt3d18-oHo_W6JUP2OIWGO7w6srwyjpwQ7GWjxYNVgbqHfKS5XAeGZBZHxMvS1bhMn0zcCDETjOzh-gGsQi3QjHlTRFhdmVKLYb__eZMRDkzA9NJyPtPI99fwK2Wf8C-C2JK7M3O9udW65oI7JP6bKieyP3BaJ2i2GPT7rBFydtRTz157Vd7L0H0bRv9vU3ZTuF5N5OHedi30o2ycOOupb2B0yBOTDp-iGK-gQ9ebbBdzmrssAwI7-MlQoeTKLK1PCVBn3G2WYvJNsVD9wOIpPRhswnn-bYZPNRYyyr7PbcT3-CrTjWnnNsM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "damir2@daan.ba",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZThhYzhhMTZiZWFkY2IyNDMyNDQ2Y2Y3MGJhMTU2NDY4ZmEzYTdkMzMzMzQ2NGZiMmVkNjZjOGFjZTc4YTM1NGE2OWNiNjlmZGRmMmU5OTkiLCJpYXQiOjE3MDkwNTQ1OTkuOTAyNjc2LCJuYmYiOjE3MDkwNTQ1OTkuOTAyNjc4LCJleHAiOjE3NDA2NzY5OTkuODk3MzY2LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.VwAgVDWi4RM4rh06PNg0zz40_MyrXr3RpNo3rG6-xLUHcYkwNDRmW1H5VuB0Ea27LXsylWTGG569vHG-c10PXXfPnw7QDjKPrxHhADmViRaoWj8z24X7-YZfEBOlcF0vqBD8XYNINBIwsbJBSmNhJ9gXI1mAblnU2Q7CNR7Aan3ecXwSkeP9vqZao-6q78kVBWsx4pi7TTGImo7DHgFwBdma1jHUoUkI6U8_INIQUpJyqKyA8cUt5Z3l5MxGsdKpLuoiGGYwXOVC59leBo4Gvc-OHtmEJJHCuVPQylumK0GWcbPmIlohs1SkmgJKu23albr9BVUtUuz4HH7HAvDf2y96-5t2mD1-B0igVTH9UOaXxwuMy3BKuWiRyyfZO670JKGZ_9ARStWejRlr1WmOVcqDttHsgpl02R-WHcxZVMJWmEks7Jg_wlJbwzlbQi3GxyF3tUfJj0-DwDrVny15y5Re17mNolBv8l1EQ-5qlUq0_Lwmb-GRl1ORTvOz_C5sLIIjrmCi9yiIHlhpTPs5ECLFOxvbXK2-ZZZtsJoopV6Ge5NgxzCcrnUzU0J2S4PUL4cdKeOA6OEdRs63_PI5vCaxRX94t_OOva49s1qo4Xv0SOm4tFK6aVKfv2wcXCxHjkSIHnC1Jt8CbYG8Ux4tsLsmdTbaULOf28Bcy1okpw0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
